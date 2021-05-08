@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+
+      <header class="header">
+        <div class="header__list-container">
+          <ul class="header__list">
+            <li class="header__list-item">О компании</li>
+            <li class="header__list-item">Контакты</li>
+            <li class="header__list-item">Условия оплаты</li>
+            <li class="header__list-item">Условия доставки</li>
+            <li class="header__list-item">Обмен и возврат</li>
+          </ul>
+        </div>
+        <div class="header-buttons">
+          <button class="header__button">Вход</button>
+          <button class="header__button b1">Регистрация</button>
+        </div>
+      </header>
+
+      <!-- Headline -->
+
+      <section class="headline">
+        <img src="img/logo.png" alt="Logo image" class="headline__logo-image" />
+        <span class="headline__number">+38 067 310 2700</span>
+        <div class="headline__social-icons">
+          <i class="headline__social-icon"></i>
+          <i class="headline__social-icon"></i>
+        </div>
+        <div class="headline__search">
+          <input
+            class="headline__search-area"
+            id="input-search-area"
+            type="text"
+          />
+          <label for="input-search-area"
+            ><i class="headline__search-icon"></i
+          ></label>
+        </div>
+        <div class="headline__currency">
+          <span class="headline__currency-item">Валюта:</span>
+          <select class="headline__choose-currency" name="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+
+      <section class="navigation">
+        <nav class="navigation__nav-list nav-list">
+          <a href="#" class="nav-list__item nav-list__item-new">Новинки</a>
+          <a href="#" class="nav-list__item">Новорожденным</a>
+          <a href="#" class="nav-list__item">Девочкам</a>
+          <a href="#" class="nav-list__item">Мальчикам</a>
+          <a href="#" class="nav-list__item">Обувь</a>
+          <a href="#" class="nav-list__item">Игрушки и аксессуары</a>
+          <a href="#" class="nav-list__item nav-list__item-discount">Акции</a>
+        </nav>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div class="footer__payments-info">
+          <span class="footer__copyright">2020 © MBaby</span>
+          <div class="footer__payments payments">
+            <img
+              class="payments__item"
+              src="img/yandex-pay.png"
+              alt="Яндекс Деньги"
+            />
+            <img class="payments__item" src="img/maestro.png" alt="Maestro" />
+            <img class="payments__item" src="img/visa.png" alt="Visa" />
+            <img
+              class="payments__item"
+              src="img/google-pay.png"
+              alt="Google Pay"
+            />
+            <img
+              class="payments__item"
+              src="img/apple-pay.png"
+              alt="Apple Pay"
+            />
+          </div>
+          <img
+            class="footer__secure-payments"
+            src="img/secure-payment.png"
+            alt="Secure payment"
+          />
+        </div>
+        <div class="footer__additional-navigation">
+          <div class="footer__additional-nav-column nav-links">
+            <h4 class="nav-links__title">Компания</h4>
+            <ul class="nav-links__list">
+              <li class="nav-links__list-item">О компании</li>
+            </ul>
+          </div>
+          <div class="footer__additional-nav-column nav-links">
+            <h4 class="nav-links__title">Помощь</h4>
+            <ul class="nav-links__list">
+              <li class="nav-links__list-item">Помощь</li>
+              <li class="nav-links__list-item">Условия оплаты</li>
+              <li class="nav-links__list-item">Условия доставки</li>
+              <li class="nav-links__list-item">Обмен и возврат</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

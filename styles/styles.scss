@@ -1,0 +1,20 @@
+@import "_veriables.scss";
+@import "header.scss";
+@import "_headline.scss";
+@import "_navigation.scss";
+@import "_footer.scss";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Ubuntu", sans-serif;
+    color: $text-color-black-first;
+    font-size: 18px;
+}
+
+.page {
+    width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+}

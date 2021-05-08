@@ -9,10 +9,15 @@
 }
 
 .header__list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 154px;
 }
 
 .header__list {
+  margin: auto;
+  padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +193,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 154px;
 }
 
 .footer .footer__payments-info {

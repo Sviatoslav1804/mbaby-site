@@ -6,9 +6,12 @@
     background: #f7f7f9;
 }
 .header__list-container {
+    display: flex;
     padding-left: 154px;
 }
 .header__list {
+    margin: auto;
+    padding-left: 0px;
     display: flex;
     list-style-type: none;
 }

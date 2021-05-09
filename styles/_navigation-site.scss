@@ -1,35 +1,33 @@
 .navigation-site {
     margin-top: 23px;
     padding-left: 154px;
-}
-.navigation-site__list {
-    display: flex;
-    align-items: center;
-}
-
-.navigation-site__list-item {
-    list-style-type: none;
-    text-decoration: underline;
-    font-size: 12px;
-    line-height: 20px;
-    color: #b6b5b5;
-}
-.navigation-site__list-line {
-    margin-left: 9px;
-    margin-right: 9px;
-    height: 1px;
-    width: 4px;
-    background: #b6b5b5;
-}
-
-.page-title {
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 45px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 30px;
-    color: #383838;
+    .navigation-site__list {
+        display: flex;
+        align-items: center;
+        .navigation-site__list-item {
+            list-style-type: none;
+            text-decoration: underline;
+            font-size: 12px;
+            line-height: 20px;
+            color: #b6b5b5;
+        }
+        .navigation-site__list-line {
+            margin-left: 9px;
+            margin-right: 9px;
+            height: 1px;
+            width: 4px;
+            background: #b6b5b5;
+        }
+    }
+    .page-title {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 45px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 30px;
+        color: #383838;
+    }
 }
 
 .fixed-basket {

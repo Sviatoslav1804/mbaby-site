@@ -1,193 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <!-- Header -->
 
-      <header class="header">
-        <div class="header__list-container">
-          <ul class="header__list">
-            <li class="header__list-item">О компании</li>
-            <li class="header__list-item">Контакты</li>
-            <li class="header__list-item">Условия оплаты</li>
-            <li class="header__list-item">Условия доставки</li>
-            <li class="header__list-item">Обмен и возврат</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header -->
+
+    <header class="header">
+      <div class="header__list-container">
+        <ul class="header__list">
+          <li class="header__list-item">О компании</li>
+          <li class="header__list-item">Контакты</li>
+          <li class="header__list-item">Условия оплаты</li>
+          <li class="header__list-item">Условия доставки</li>
+          <li class="header__list-item">Обмен и возврат</li>
+        </ul>
+      </div>
+      <div class="header-buttons">
+        <button class="header__button">Вход</button>
+        <button class="header__button b1">Регистрация</button>
+      </div>
+    </header>
+
+    <!-- Headline -->
+
+    <section class="headline">
+      <img src="img/logo.png" alt="Logo image" class="headline__logo-image" />
+      <span class="headline__number">+38 067 310 2700</span>
+      <div class="headline__social-icons">
+        <i class="headline__social-icon"></i>
+        <i class="headline__social-icon"></i>
+      </div>
+      <div class="headline__search">
+        <input class="headline__search-area" id="input-search-area" type="text" />
+        <label for="input-search-area"><i class="headline__search-icon"></i></label>
+      </div>
+      <div class="headline__currency">
+        <span class="headline__currency-item">Валюта:</span>
+        <select class="headline__choose-currency" name="currency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="RUB">RUB</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+
+    <section class="navigation">
+      <nav class="navigation__nav-list nav-list">
+        <a href="#" class="nav-list__item nav-list__item-new">Новинки</a>
+        <a href="#" class="nav-list__item">Новорожденным</a>
+        <a href="#" class="nav-list__item">Девочкам</a>
+        <a href="#" class="nav-list__item">Мальчикам</a>
+        <a href="#" class="nav-list__item">Обувь</a>
+        <a href="#" class="nav-list__item">Игрушки и аксессуары</a>
+        <a href="#" class="nav-list__item nav-list__item-discount">Акции</a>
+      </nav>
+    </section>
+
+    <!-- Navigation-site -->
+
+    <section class="navigation-site">
+      <nav class="navigation-site__list">
+        <li class="navigation-site__list-item">Главная</li>
+        <div class="navigation-site__list-line"></div>
+        <li class="navigation-site__list-item">Каталог</li>
+        <div class="navigation-site__list-line"></div>
+        <li class="navigation-site__list-item">Новорожденным</li>
+        <div class="navigation-site__list-line"></div>
+        <li class="navigation-site__list-item">Ромперы, человечки</li>
+        <div class="navigation-site__list-line"></div>
+        <li class="navigation-site__list-item">Детские человечки</li>
+        <div class="navigation-site__list-line"></div>
+        <li class="navigation-site__list-item">
+          Человечек детский с капюшоном и нашивками
+        </li>
+      </nav>
+      <h1 class="page-title">Человечек детский с капюшоном и нашивками</h1>
+    </section>
+
+    <img class="fixed-basket" src="img/basket-count-empty-small.png" alt="basket_count" />
+    <img class="fixed-wish" src="img/wish-count-empty-small.png" alt="wish-count-empty-small" />
+    <img class="fixed-compare" src="img/compare_line.png" alt="compare_line" />
+
+    <!-- Characterictic -->
+
+    <section class="characterictic">
+      <button class="characterictic__button">Характеристики</button>
+      <button class="characterictic__button">Отзывы о товаре</button>
+      <div class="characterictic__button-line"></div>
+      <div class="characterictic__container">
+        <div class="characterictic__rows">
+          <div class="characterictic__row">
+            <div class="characterictic__row-point"></div>
+            <span class="characterictic__row-text">Сезон</span>
+            <div class="characterictic__row-line"></div>
+            <span class="characterictic__row-text">Демисезон</span>
+          </div>
+          <div class="characterictic__row">
+            <div class="characterictic__row-point"></div>
+            <span class="characterictic__row-text">Пол</span>
+            <div class="characterictic__row-line"></div>
+            <span class="characterictic__row-text">Универсальный</span>
+          </div>
+          <div class="characterictic__row">
+            <div class="characterictic__row-point"></div>
+            <span class="characterictic__row-text">Материал</span>
+            <div class="characterictic__row-line"></div>
+            <span class="characterictic__row-text">Джинс</span>
+          </div>
+        </div>
+        <img class="characterictic__image" src="img/body-measurements.png" alt="body-measurements">
+      </div>
+    </section>
+
+    <!-- Recomendation -->
+
+    <section class="recomendation">
+      <h3 class="recomendation__title">Персональные рекомендации</h3>
+      <div class="recomendation__line"></div>
+      <div class="recomendaton__arrows">
+        <img src="img/arrow-left.png" alt="arrow-left" />
+        <img src="img/arrow-right.png" alt="arrow-right" />
+      </div>
+      <div class="recomendation__blocks">
+        <div class="recomendation__block">
+          <img class="recomendation__block-discount" src="img/discount.png" alt="discount" />
+          <img class="recomendation__block-image" src="img/black-shoes.png" alt="black-shoes" />
+          <h4 class="recomendation__block-title">Кроссовки YYG</h4>
+          <div class="recomendation__block-delivery">
+            <img class="recomendation__block-check-mark" src="img/check-mark.png" alt="check-mark" />
+            <p class="recomendation__block-description">
+              Отправим через 1-2 дня
+            </p>
+          </div>
+          <span class="recomendation__block-price">от $39/шт</span>
+        </div>
+        <div class="recomendation__block">
+          <img class="recomendation__block-image" src="img/baby-costum.png" alt="baby-costum" />
+          <h4 class="recomendation__block-title">
+            Человечек утепленный Дракоша
+          </h4>
+          <div class="recomendation__block-delivery">
+            <img class="recomendation__block-check-mark" src="img/check-mark.png" alt="check-mark" />
+            <p class="recomendation__block-description">
+              Отправим через 7-10 дня
+            </p>
+          </div>
+          <span class="recomendation__block-price">от $34/шт</span>
+        </div>
+        <div class="recomendation__block">
+          <img class="recomendation__block-image" src="img/pink-shoes.png" alt="pink-shoes" />
+          <h4 class="recomendation__block-title">
+            Кроссовки с полосками в сетку
+          </h4>
+          <div class="recomendation__block-delivery">
+            <img class="recomendation__block-check-mark" src="img/check-mark.png" alt="check-mark" />
+            <p class="recomendation__block-description">
+              Отправим через 7-10 дня
+            </p>
+          </div>
+          <span class="recomendation__block-price">от $16/шт</span>
+        </div>
+        <div class="recomendation__block">
+          <img class="recomendation__block-image" src="img/jacket.png" alt="jacket" />
+          <h4 class="recomendation__block-title">Курточка с ушками</h4>
+          <div class="recomendation__block-delivery">
+            <img class="recomendation__block-check-mark" src="img/check-mark.png" alt="check-mark" />
+            <p class="recomendation__block-description">
+              Отправим через 1-2 дня
+            </p>
+          </div>
+          <span class="recomendation__block-price">от $27/шт</span>
+        </div>
+        <div class="recomendation__block recomendation__block-last ">
+          <img class="recomendation__block-image" src="img/white-shoes.png" alt="white-shoes" />
+          <h4 class="recomendation__block-title">
+            Кроссовки со светящиеся подошвой
+          </h4>
+          <div class="recomendation__block-delivery">
+            <img class="recomendation__block-check-mark" src="img/check-mark.png" alt="check-mark" />
+            <p class="recomendation__block-description">
+              Отправим через 1-2 дня
+            </p>
+          </div>
+          <span class="recomendation__block-price">от $20/шт</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comunication -->
+
+    <section class="comunication">
+      <img class="comunication__image" src="img/wrap-icon-iblock.png" alt="wrap-icon-iblock" />
+      <p class="comunication__text">
+        Подписывайтесь <br />
+        на новости и акции
+      </p>
+      <input class="comunication__input" type="email" placeholder="Оставьте свой e-mail" />
+      <button class="comunication__button">Подписаться</button>
+      <span class="comunication__number">+38 067 310 2700</span>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__payments-info">
+        <span class="footer__copyright">2020 © MBaby</span>
+        <div class="footer__payments payments">
+          <img class="payments__item" src="img/yandex-pay.png" alt="Яндекс Деньги" />
+          <img class="payments__item" src="img/maestro.png" alt="Maestro" />
+          <img class="payments__item" src="img/visa.png" alt="Visa" />
+          <img class="payments__item" src="img/google-pay.png" alt="Google Pay" />
+          <img class="payments__item" src="img/apple-pay.png" alt="Apple Pay" />
+        </div>
+        <img class="footer__secure-payments" src="img/secure-payment.png" alt="Secure payment" />
+      </div>
+      <div class="footer__additional-navigation">
+        <div class="footer__additional-nav-column nav-links">
+          <h4 class="nav-links__title">Компания</h4>
+          <ul class="nav-links__list">
+            <li class="nav-links__list-item">О компании</li>
           </ul>
         </div>
-        <div class="header-buttons">
-          <button class="header__button">Вход</button>
-          <button class="header__button b1">Регистрация</button>
+        <div class="footer__additional-nav-column nav-links">
+          <h4 class="nav-links__title">Помощь</h4>
+          <ul class="nav-links__list">
+            <li class="nav-links__list-item">Помощь</li>
+            <li class="nav-links__list-item">Условия оплаты</li>
+            <li class="nav-links__list-item">Условия доставки</li>
+            <li class="nav-links__list-item">Обмен и возврат</li>
+          </ul>
         </div>
-      </header>
+      </div>
+    </footer>
+  </div>
+</body>
 
-      <!-- Headline -->
-
-      <section class="headline">
-        <img src="img/logo.png" alt="Logo image" class="headline__logo-image" />
-        <span class="headline__number">+38 067 310 2700</span>
-        <div class="headline__social-icons">
-          <i class="headline__social-icon"></i>
-          <i class="headline__social-icon"></i>
-        </div>
-        <div class="headline__search">
-          <input
-            class="headline__search-area"
-            id="input-search-area"
-            type="text"
-          />
-          <label for="input-search-area"
-            ><i class="headline__search-icon"></i
-          ></label>
-        </div>
-        <div class="headline__currency">
-          <span class="headline__currency-item">Валюта:</span>
-          <select class="headline__choose-currency" name="currency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="RUB">RUB</option>
-          </select>
-        </div>
-      </section>
-
-      <!-- Navigation -->
-
-      <section class="navigation">
-        <nav class="navigation__nav-list nav-list">
-          <a href="#" class="nav-list__item nav-list__item-new">Новинки</a>
-          <a href="#" class="nav-list__item">Новорожденным</a>
-          <a href="#" class="nav-list__item">Девочкам</a>
-          <a href="#" class="nav-list__item">Мальчикам</a>
-          <a href="#" class="nav-list__item">Обувь</a>
-          <a href="#" class="nav-list__item">Игрушки и аксессуары</a>
-          <a href="#" class="nav-list__item nav-list__item-discount">Акции</a>
-        </nav>
-      </section>
-
-      <!-- Navigation-site -->
-
-      <section class="navigation-site">
-        <nav class="navigation-site__list">
-          <li class="navigation-site__list-item">Главная</li>
-          <div class="navigation-site__list-line"></div>
-          <li class="navigation-site__list-item">Каталог</li>
-          <div class="navigation-site__list-line"></div>
-          <li class="navigation-site__list-item">Новорожденным</li>
-          <div class="navigation-site__list-line"></div>
-          <li class="navigation-site__list-item">Ромперы, человечки</li>
-          <div class="navigation-site__list-line"></div>
-          <li class="navigation-site__list-item">Детские человечки</li>
-          <div class="navigation-site__list-line"></div>
-          <li class="navigation-site__list-item">
-            Человечек детский с капюшоном и нашивками
-          </li>
-        </nav>
-        <h1 class="page-title">Человечек детский с капюшоном и нашивками</h1>
-      </section>
-
-      <img
-        class="fixed-basket"
-        src="img/basket-count-empty-small.png"
-        alt="basket_count"
-      />
-      <img
-        class="fixed-wish"
-        src="img/wish-count-empty-small.png"
-        alt="wish-count-empty-small"
-      />
-      <img
-        class="fixed-compare"
-        src="img/compare_line.png"
-        alt="compare_line"
-      />
-
-      <!-- Comunication -->
-
-      <section class="comunication">
-        <img
-          class="comunication__image"
-          src="img/wrap-icon-iblock.png"
-          alt="wrap-icon-iblock"
-        />
-        <p class="comunication__text">
-          Подписывайтесь <br />
-          на новости и акции
-        </p>
-        <input
-          class="comunication__input"
-          type="email"
-          placeholder="Оставьте свой e-mail"
-        />
-        <button class="comunication__button">Подписаться</button>
-        <span class="comunication__number">+38 067 310 2700</span>
-      </section>
-
-      <!-- Footer -->
-
-      <footer class="footer">
-        <div class="footer__payments-info">
-          <span class="footer__copyright">2020 © MBaby</span>
-          <div class="footer__payments payments">
-            <img
-              class="payments__item"
-              src="img/yandex-pay.png"
-              alt="Яндекс Деньги"
-            />
-            <img class="payments__item" src="img/maestro.png" alt="Maestro" />
-            <img class="payments__item" src="img/visa.png" alt="Visa" />
-            <img
-              class="payments__item"
-              src="img/google-pay.png"
-              alt="Google Pay"
-            />
-            <img
-              class="payments__item"
-              src="img/apple-pay.png"
-              alt="Apple Pay"
-            />
-          </div>
-          <img
-            class="footer__secure-payments"
-            src="img/secure-payment.png"
-            alt="Secure payment"
-          />
-        </div>
-        <div class="footer__additional-navigation">
-          <div class="footer__additional-nav-column nav-links">
-            <h4 class="nav-links__title">Компания</h4>
-            <ul class="nav-links__list">
-              <li class="nav-links__list-item">О компании</li>
-            </ul>
-          </div>
-          <div class="footer__additional-nav-column nav-links">
-            <h4 class="nav-links__title">Помощь</h4>
-            <ul class="nav-links__list">
-              <li class="nav-links__list-item">Помощь</li>
-              <li class="nav-links__list-item">Условия оплаты</li>
-              <li class="nav-links__list-item">Условия доставки</li>
-              <li class="nav-links__list-item">Обмен и возврат</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
 </html>

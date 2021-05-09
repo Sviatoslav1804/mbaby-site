@@ -27,8 +27,8 @@
 .header .header__list-container .header__list .header__list-item {
   margin-right: 26px;
   font-size: 11px;
-  font-weight: 400;
   line-height: 20px;
+  color: #919191;
 }
 
 .header .header-buttons {
@@ -159,13 +159,13 @@
   padding: 0 154px;
 }
 
-.nav-list {
+.navigation .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-list__item {
+.navigation .nav-list__item {
   display: block;
   font-size: 15px;
   line-height: 20px;
@@ -176,16 +176,16 @@
   cursor: pointer;
 }
 
-.nav-list__item:nth-last-child(2) {
+.navigation .nav-list__item:nth-last-child(2) {
   margin: 21px 25px 29px 25px;
   max-width: 118px;
 }
 
-.nav-list__item-new {
+.navigation .nav-list__item-new {
   color: #30a74b;
 }
 
-.nav-list__item-discount {
+.navigation .nav-list__item-discount {
   color: #ff0000;
 }
 
@@ -194,7 +194,7 @@
   padding-left: 154px;
 }
 
-.navigation-site__list {
+.navigation-site .navigation-site__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +203,7 @@
           align-items: center;
 }
 
-.navigation-site__list-item {
+.navigation-site .navigation-site__list .navigation-site__list-item {
   list-style-type: none;
   text-decoration: underline;
   font-size: 12px;
@@ -211,7 +211,7 @@
   color: #b6b5b5;
 }
 
-.navigation-site__list-line {
+.navigation-site .navigation-site__list .navigation-site__list-line {
   margin-left: 9px;
   margin-right: 9px;
   height: 1px;
@@ -219,7 +219,7 @@
   background: #b6b5b5;
 }
 
-.page-title {
+.navigation-site .page-title {
   margin: 0;
   margin-top: 5px;
   margin-bottom: 45px;
@@ -245,6 +245,199 @@
   position: fixed;
   top: 318px;
   right: 13.4rem;
+}
+
+.characterictic {
+  padding-top: 30px;
+  padding-left: 154px;
+  padding-bottom: 103px;
+}
+
+.characterictic .characterictic__button {
+  height: 47px;
+  width: 151px;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6d6d6d;
+}
+
+.characterictic .characterictic__button:focus {
+  border: 1px solid #2ac1c8;
+  font-size: 14px;
+  line-height: 18px;
+  color: #00b8bb;
+}
+
+.characterictic .characterictic__button-line {
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.characterictic .characterictic__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+}
+
+.characterictic .characterictic__container .characterictic__rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 582px;
+}
+
+.characterictic .characterictic__container .characterictic__rows .characterictic__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.characterictic .characterictic__container .characterictic__rows .characterictic__row .characterictic__row-point {
+  height: 2px;
+  width: 2px;
+  background: #00cccf;
+}
+
+.characterictic .characterictic__container .characterictic__rows .characterictic__row .characterictic__row-line {
+  height: 1px;
+  width: 430px;
+  background-color: #ececec;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.characterictic .characterictic__container .characterictic__rows .characterictic__row .characterictic__row-text {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #555555;
+}
+
+.characterictic .characterictic__image {
+  margin-left: 30px;
+}
+
+.characterictic > button {
+  margin-right: 10px;
+}
+
+.recomendation {
+  padding-left: 154px;
+  padding-bottom: 76px;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.recomendation .recomendation__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.recomendation .recomendation__line {
+  margin-top: 7px;
+  height: 2px;
+  width: 237px;
+  background: #2ac1c8;
+}
+
+.recomendation .recomendaton__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 115px;
+}
+
+.recomendation .recomendation__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.recomendation .recomendation__blocks .recomendation__block {
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-discount {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 65px;
+  left: 167px;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-image {
+  height: 170px;
+  width: 170px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-title {
+  height: 40px;
+  margin: 0;
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00b8bb;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-delivery {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-delivery .recomendation__block-check-mark {
+  height: 11px;
+  width: 12px;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-delivery .recomendation__block-description {
+  margin: 0;
+  margin-left: 6px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6d6d6d;
+}
+
+.recomendation .recomendation__blocks .recomendation__block .recomendation__block-price {
+  margin-top: 9px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #1d1a1a;
+  padding-bottom: 35px;
+}
+
+.recomendation .recomendation__blocks .recomendation__block-last {
+  margin-right: 0;
 }
 
 .comunication {

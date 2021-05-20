@@ -1,0 +1,325 @@
+.main {
+    display: flex;
+    width: 100%;
+    padding: 0 154px 0 154px;
+    flex-wrap: wrap;
+}
+
+.main__title {
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    color: #383838;
+}
+
+.main__column {
+    width: 532 px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e5e5;
+    &:last-child {
+        border-left: 0;
+        width: 600px;
+    }
+}
+
+.main-new {
+    margin-top: 23px;
+    margin-left: 22px;
+    margin-right: 26px;
+    height: 45px;
+    width: 45px;
+}
+
+.main-image {
+    margin-top: 30px;
+    height: 345px;
+    width: 345px;
+}
+
+.main__column-row-images {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    padding-bottom: 218px;
+}
+
+.main__column-row-image {
+    margin-right: 14px;
+}
+
+.main__column-row-image:hover {
+    border: 2px solid #2ac1c8;
+}
+
+.main__column-row-image:nth-child(5) {
+    margin-right: 0;
+}
+
+.main__top-info {
+    display: flex;
+    margin: 30px;
+}
+
+.main__top-info-btn {
+    width: 96px;
+    height: 31px;
+    font-size: 11px;
+    line-height: 0px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #6D6D6D;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    background-color: #fff;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    &:first-child {
+        margin: 0;
+    }
+    &:hover {
+        color: #fff;
+        background-color: #00C7C8;
+    }
+}
+
+.main__icon-like {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/like.png);
+}
+
+.main__icon-compare {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/compare.png);
+}
+
+.main__column-row-arrow-left {
+    margin-left: 11px;
+    margin-right: 90px;
+    width: 29px;
+    height: 29px;
+}
+
+.main__column-row-arrow-right {
+    margin-left: 90px;
+    margin-right: 9px;
+    width: 29px;
+    height: 29px;
+}
+
+.main__column-row-image {
+    height: 56px;
+    width: 56px;
+}
+
+.main {
+    &__product-details {
+        border-top: 1px solid #e5e5e5;
+        display: flex;
+        // padding: 26px 35px 33px 35px;
+        flex-wrap: wrap;
+    }
+    &__product-info {
+        width: 316px;
+        display: flex;
+        flex-direction: column;
+        padding: 26px 0 33px 35px;
+    }
+    &__product-price {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 20px;
+    }
+    &__product-delivery {
+        display: flex;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+    &__product-del-check-mark {
+        display: inline-block;
+        background-image: url(../img/check-mark-orange.png);
+        width: 12px;
+        height: 11px;
+    }
+    &__product-del-text {
+        font-size: 12px;
+        line-height: 15px;
+        color: #6D6D6D;
+    }
+    &__product-rating {
+        margin: 19px 0 0 0;
+    }
+    &__product-text {
+        margin: auto 0 0 0;
+        font-size: 13px;
+        line-height: 18px;
+        color: #888888;
+    }
+    &__product-choose {
+        width: 256px;
+        padding: 26px 0 33px 0;
+    }
+    &__product-choose-size {
+        margin: 0;
+    }
+    &__product-width {
+        width: 135px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #888888;
+        background-color: #F7F7F7;
+    }
+    &__product-width span {
+        color: #383838;
+        margin: 0 0 0 8px;
+    }
+    &__product-about-size {
+        margin: 5px 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+    &__product-about-size-text {
+        font-size: 12px;
+        line-height: 18px;
+        color: #00C7C8;
+    }
+    &__product-icon-tshirt {
+        margin: 0 8px 0 0;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/icon-tshirt.png);
+    }
+    &__product-buy {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__product-counter {
+        display: flex;
+        border-radius: 2px;
+        border: 1px solid #E5E5E5;
+        width: 119px;
+        height: 37px;
+        margin: 16px 15px 0 0;
+    }
+    &__product-counte-select {
+        width: 27px;
+        height: 35px;
+    }
+    &__product-buy-amount {
+        width: 65px;
+        height: 35px;
+        background-color: #F7F7F7;
+        border: none;
+        border-right: 1px solid #E5E5E5;
+        border-left: 1px solid #E5E5E5;
+        padding: 0;
+        outline: none;
+        text-align: center;
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+    }
+    &__product-buy-basket {
+        background: #00CCCF;
+        border-radius: 2px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 119px;
+        height: 37px;
+        border: none;
+        padding: 0;
+        margin: 16px 0 0 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+    &__product-buy-description {
+        height: 40px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        align-items: center;
+        color: #888888;
+    }
+    &__product-info,
+    &__product__choose {
+        height: 481px;
+    }
+    &__product-share {
+        width: 100%;
+        height: 83px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #e5e5e5;
+    }
+    &__product-share-btn {
+        margin: 0 0 0 30px;
+        padding: 8px 10px 8px 30px;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: #6D6D6D;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        background-color: #fff;
+        cursor: pointer;
+        &:hover {
+            background: #00cccf;
+            border: none;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.product-choose {
+    &__title {
+        font-size: 12px;
+        line-height: 20px;
+        color: #383838;
+        margin: 0;
+    }
+    &__btns {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3px 0 0 0;
+    }
+    &__button {
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: #373737;
+        padding: 8px 11px;
+        margin: 0 6px 6px 0;
+        font-size: 10px;
+        line-height: 15px;
+        background-color: #fff;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        cursor: pointer;
+        &:nth-child(6) {
+            margin: 0 0 6px 0;
+        }
+        &:nth-child(12) {
+            margin: 0 0 6px 0;
+        }
+        &:hover {
+            background: #00cccf;
+            border: 1px solid #00cccf;
+            border-radius: 2px;
+            color: #FFFFFF;
+        }
+    }
+}
